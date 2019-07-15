@@ -10,16 +10,16 @@ import Foundation
 
 func main() {
     let vendingMachine = VendingMachine()
-    
+
     let strawberryMilk = StrawberryMilk(stringDate: "20190630", strawberryContent: 20)
     let chocolateMilk = ChocolateMilk(fattyContent: 1.4)
     let coke = Coke(calorie: 200, sugarFree: false)
     let sprite = Sprite(calorie: 90, lemonContent: 3.5)
     let topCoffee = TOPCoffee(temperature: 70.0, arbicaBeansContent: true)
-    let cantataCoffee = CantataCoffee(temperature: 30.0, DripStatus: true)
-    
+    let cantataCoffee = CantataCoffee(temperature: 30.0, dripStatus: true)
+
     var endPoint = 0
-    
+
     vendingMachine.stockUp(of: strawberryMilk, count: 3)
     vendingMachine.stockUp(of: chocolateMilk, count: 3)
     vendingMachine.stockUp(of: coke, count: 3)
@@ -27,27 +27,26 @@ func main() {
     vendingMachine.stockUp(of: topCoffee, count: 3)
     vendingMachine.stockUp(of: cantataCoffee, count: 3)
 
-    
     while endPoint == 0 {
         let mode = InputView.readInput()
-        if mode == .Quit {
+        if mode == .quit {
             endPoint = 1
-        } else if mode == .Error {
+        } else if mode == .error {
             print(mode.rawValue)
         }
-        while mode == .Admin || mode == .User {
+        while mode == .admin || mode == .user {
             let adminInputView = AdminInputView()
             let userInputView = UserInputView()
             var input: [String] = []
-            
+
             switch mode {
-            case .Admin: input = adminInputView.input(items: vendingMachine.getItems(), menuMent: mode)
-            case .User: input = userInputView.input(items: vendingMachine.getItems(), money: vendingMachine.checkBalance(), menuMent: mode)
+            case .admin: input = adminInputView.input(items: vendingMachine.getItems(), menuMent: mode)
+            case .user: input = userInputView.input(items: vendingMachine.getItems(), money: vendingMachine.checkBalance(), menuMent: mode)
             default: input = ["0"]
             }
-            
+
             let manager = Manager(input: input[0])
-            
+
             if manager == .back {
                 break
             } else if manager == .quit {

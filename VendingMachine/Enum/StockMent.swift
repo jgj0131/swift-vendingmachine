@@ -11,10 +11,10 @@ import Foundation
 enum StockMent: String {
     case addStock = "추가할 재고의 갯수입력: "
     case deleteStock = "제거할 재고의 갯수입력: "
-    
+
     init(input: String) {
-        switch input{
-        case "add","Add": self = .addStock
+        switch input {
+        case "add", "Add": self = .addStock
         default: self = .deleteStock
         }
     }

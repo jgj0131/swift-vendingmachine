@@ -10,34 +10,34 @@ import Foundation
 
 struct WorkFlow {
     private var mode: MenuMent
-    
-    init(mode: MenuMent){
+
+    init(mode: MenuMent) {
         self.mode = mode
     }
-    
+
     /// 입력받은 값에 따라 자판기의 기능을 실행하는 메소드
     mutating func selectMenu( vendingMachine: VendingMachine, of answers: [String]) -> String {
         let itemsSet = vendingMachine.getItems().set()
         var result = ""
-        
+
         switch mode {
-        case .Admin: result = adminWorkFlow(vendingMachine: vendingMachine, of: answers, itemsSet: itemsSet)
-        case .User: result = userWorkFlow(vendingMachine: vendingMachine, of: answers, itemsSet: itemsSet)
+        case .admin: result = adminWorkFlow(vendingMachine: vendingMachine, of: answers, itemsSet: itemsSet)
+        case .user: result = userWorkFlow(vendingMachine: vendingMachine, of: answers, itemsSet: itemsSet)
         default: result = ""
         }
         return result
     }
-    
+
     /// 관리자 모드일때 입력받은 값에 따라 자판기의 기능을 실행하는 메소드
     func adminWorkFlow(vendingMachine: VendingMachine, of answers: [String], itemsSet: [Product]) -> String {
         let answer = convertEachAnswers(of: answers)
         var result = ""
-        
+
         switch answer.first {
-        case 1: print(StockMent(input:"add").rawValue,terminator:"")
+        case 1: print(StockMent(input: "add").rawValue, terminator: "")
             let count = Int(readLine() ?? "") ?? 0
             vendingMachine.stockUp(of: itemsSet[answer.second-1], count: count)
-        case 2: print(StockMent(input:"delete").rawValue,terminator:"")
+        case 2: print(StockMent(input: "delete").rawValue, terminator: "")
         let count = Int(readLine() ?? "") ?? 0
             vendingMachine.takeOutStock(of: itemsSet[answer.second-1], count: count)
         default : let patedItems = vendingMachine.isItemsPastExpirationDate()
@@ -49,12 +49,12 @@ struct WorkFlow {
         }
         return result
     }
-    
+
     /// 사용자 모드일때 입력받은 값에 따라 자판기의 기능을 실행하는 메소드
     func userWorkFlow(vendingMachine: VendingMachine, of answers: [String], itemsSet: [Product]) -> String {
         let answer = convertEachAnswers(of: answers)
         var result: String = ""
-    
+
         switch answer.first {
         case 1: vendingMachine.pay(of: answer.second)
         case 2: result = vendingMachine.purchase(of: itemsSet[answer.second-1])+"\n"
@@ -62,7 +62,7 @@ struct WorkFlow {
         }
         return result
     }
-    
+
     /// [String]을 [Int]로 변환하는 함수
     func convertEachAnswers(of answers: [String]) -> (first: Int, second: Int) {
         let menuAnswer: Int = Int(answers[0]) ?? 0

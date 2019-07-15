@@ -10,12 +10,12 @@ import Foundation
 
 class Soda: Product {
     private var calorie: Int
-    
+
     init(capacity: Int, price: Int, name: String, stringDate: String, calorie: Int) {
         self.calorie = calorie
         super.init(brand: "코카", capacity: capacity, price: price, name: name, stringDate: stringDate)
     }
-    
+
     func isLowCalorie() -> Bool {
         if calorie <= 100 {
             return true

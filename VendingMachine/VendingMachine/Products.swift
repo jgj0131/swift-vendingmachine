@@ -30,4 +30,4 @@ struct Array<Product>: Sequence, IteratorProtocol {
     }
 }
 
-let array: [Int] = [1,2,3]
+let array: [Int] = [1, 2, 3]

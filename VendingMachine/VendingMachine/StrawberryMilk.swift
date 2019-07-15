@@ -10,8 +10,8 @@ import Foundation
 
 class StrawberryMilk: Milk {
     private var strawberryContent: Double
-    
-    init(stringDate: String, strawberryContent: Double){
+
+    init(stringDate: String, strawberryContent: Double) {
         self.strawberryContent = strawberryContent
         super.init(capacity: 200, price: 2600, name: "딸기우유", stringDate: stringDate, milkFarmCode: 70306)
     }

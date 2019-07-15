@@ -42,7 +42,9 @@
 		15B8A5C822D86A0400629C77 /* MenuMent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8A5C722D86A0400629C77 /* MenuMent.swift */; };
 		15B8A5CA22DB34FE00629C77 /* StockMent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8A5C922DB34FE00629C77 /* StockMent.swift */; };
 		15B8A5CC22DB37A500629C77 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B8A5CB22DB37A500629C77 /* Manager.swift */; };
+		81D4A1AA090706627F44B225 /* Pods_VendingMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84DEC682B5C81FCDACA983B /* Pods_VendingMachine.framework */; };
 		839DA90D1F8D1F95009E05F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839DA90C1F8D1F95009E05F3 /* main.swift */; };
+		E5D36E641AEC24B3638778D5 /* Pods_VendingMachineTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73416BC6AFC8F84027814D1D /* Pods_VendingMachineTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +71,7 @@
 		15078B0222D36A8C00F6302A /* OutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputView.swift; sourceTree = "<group>"; };
 		15078B0422D36C1F00F6302A /* VendingMachineTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendingMachineTest.swift; sourceTree = "<group>"; };
 		15078B0922D510C800F6302A /* WorkFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkFlow.swift; sourceTree = "<group>"; };
+		154437D322DC492B00E08A2D /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		1562F29C22C9D2D40052AC35 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		1562F29E22C9E5330052AC35 /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		1562F2A022C9F3660052AC35 /* Milk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milk.swift; sourceTree = "<group>"; };
@@ -83,8 +86,14 @@
 		15B8A5C722D86A0400629C77 /* MenuMent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuMent.swift; sourceTree = "<group>"; };
 		15B8A5C922DB34FE00629C77 /* StockMent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMent.swift; sourceTree = "<group>"; };
 		15B8A5CB22DB37A500629C77 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		174E0E6458ED1BFDB6690112 /* Pods-VendingMachine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendingMachine.debug.xcconfig"; path = "Target Support Files/Pods-VendingMachine/Pods-VendingMachine.debug.xcconfig"; sourceTree = "<group>"; };
+		67706B7046AB3F81897C8082 /* Pods-VendingMachineTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendingMachineTest.debug.xcconfig"; path = "Target Support Files/Pods-VendingMachineTest/Pods-VendingMachineTest.debug.xcconfig"; sourceTree = "<group>"; };
+		73416BC6AFC8F84027814D1D /* Pods_VendingMachineTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendingMachineTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		839DA9091F8D1F95009E05F3 /* VendingMachine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VendingMachine; sourceTree = BUILT_PRODUCTS_DIR; };
 		839DA90C1F8D1F95009E05F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A9AFB16B1C08FFDCDF272635 /* Pods-VendingMachineTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendingMachineTest.release.xcconfig"; path = "Target Support Files/Pods-VendingMachineTest/Pods-VendingMachineTest.release.xcconfig"; sourceTree = "<group>"; };
+		BC5C48845EAD9C15FD50FBEF /* Pods-VendingMachine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VendingMachine.release.xcconfig"; path = "Target Support Files/Pods-VendingMachine/Pods-VendingMachine.release.xcconfig"; sourceTree = "<group>"; };
+		C84DEC682B5C81FCDACA983B /* Pods_VendingMachine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VendingMachine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D36E641AEC24B3638778D5 /* Pods_VendingMachineTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D4A1AA090706627F44B225 /* Pods_VendingMachine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +166,7 @@
 		839DA9001F8D1F95009E05F3 = {
 			isa = PBXGroup;
 			children = (
+				154437D322DC492B00E08A2D /* .swiftlint.yml */,
 				15B8A5C622D869EB00629C77 /* Enum */,
 				15B8A5C522D865D900629C77 /* Protocol */,
 				15078AFF22D36A6900F6302A /* View */,
@@ -162,6 +174,8 @@
 				839DA90B1F8D1F95009E05F3 /* VendingMachine */,
 				1562F2AC22C9FB440052AC35 /* VendingMachineTest */,
 				839DA90A1F8D1F95009E05F3 /* Products */,
+				CEA079E2E5A0B6D96EB0A98E /* Pods */,
+				F5156F0BE1F2DFCD6189B036 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +208,26 @@
 			path = VendingMachine;
 			sourceTree = "<group>";
 		};
+		CEA079E2E5A0B6D96EB0A98E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				174E0E6458ED1BFDB6690112 /* Pods-VendingMachine.debug.xcconfig */,
+				BC5C48845EAD9C15FD50FBEF /* Pods-VendingMachine.release.xcconfig */,
+				67706B7046AB3F81897C8082 /* Pods-VendingMachineTest.debug.xcconfig */,
+				A9AFB16B1C08FFDCDF272635 /* Pods-VendingMachineTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F5156F0BE1F2DFCD6189B036 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C84DEC682B5C81FCDACA983B /* Pods_VendingMachine.framework */,
+				73416BC6AFC8F84027814D1D /* Pods_VendingMachineTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1562F2B022C9FB440052AC35 /* Build configuration list for PBXNativeTarget "VendingMachineTest" */;
 			buildPhases = (
+				F7A4F8D2A28A000A631F1BB0 /* [CP] Check Pods Manifest.lock */,
 				1562F2A722C9FB440052AC35 /* Sources */,
 				1562F2A822C9FB440052AC35 /* Frameworks */,
 				1562F2A922C9FB440052AC35 /* Resources */,
+				15B8A5CD22DC249100629C77 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -218,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 839DA9101F8D1F95009E05F3 /* Build configuration list for PBXNativeTarget "VendingMachine" */;
 			buildPhases = (
+				C32D990C2F71940799A887D6 /* [CP] Check Pods Manifest.lock */,
 				839DA9051F8D1F95009E05F3 /* Sources */,
 				839DA9061F8D1F95009E05F3 /* Frameworks */,
 				839DA9071F8D1F95009E05F3 /* CopyFiles */,
+				1515EA6822DC3E9300D0C880 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -279,6 +317,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1515EA6822DC3E9300D0C880 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		15B8A5CD22DC249100629C77 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		C32D990C2F71940799A887D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VendingMachine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A4F8D2A28A000A631F1BB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VendingMachineTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1562F2A722C9FB440052AC35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -335,6 +454,7 @@
 /* Begin XCBuildConfiguration section */
 		1562F2B122C9FB440052AC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67706B7046AB3F81897C8082 /* Pods-VendingMachineTest.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
@@ -354,6 +474,7 @@
 		};
 		1562F2B222C9FB440052AC35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AFB16B1C08FFDCDF272635 /* Pods-VendingMachineTest.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
@@ -478,6 +599,7 @@
 		};
 		839DA9111F8D1F95009E05F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 174E0E6458ED1BFDB6690112 /* Pods-VendingMachine.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,6 +609,7 @@
 		};
 		839DA9121F8D1F95009E05F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC5C48845EAD9C15FD50FBEF /* Pods-VendingMachine.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";

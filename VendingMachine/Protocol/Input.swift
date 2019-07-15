@@ -26,9 +26,9 @@ extension Input {
         purifiedAnswer = classifyAnswer(of: answer)
         return purifiedAnswer
     }
-    
+
     /// 공백을 기준으로 답을 구분하는 메소드
-    func classifyAnswer(of input: String?) -> [String]{
+    func classifyAnswer(of input: String?) -> [String] {
         let answer: String = input ?? ""
         let answers = answer.components(separatedBy: " ")
         return answers
